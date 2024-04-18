@@ -1,15 +1,55 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+#root > [data-reactroot] { height: 100vh }
+
+.fill-height {
+  min-height: 100%;
+  height:auto !important; /* cross-browser */
+  height: 100%; /* cross-browser */
+}
+
+
+/*----------------------------------------------------------------------------------------------*/
+
+.tot {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: var(--size-navBar) 1fr;
+}
+
+.navBar{
+  width: 100%;
+  height: var(--size-navBar);
+}
+
+.princ {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
 .left{
   background-color: red;
   width: 50%;
-  height: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 .right{
   background-color: blue;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }

@@ -4,17 +4,23 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <main className='princ'>
-      <div className="left">
+    <div className="tot">
+      <nav className='navBar'>
 
-      </div>
-      <div className="right">
-
-      </div>
-    </main>
+      </nav>
+      <main className='princ'>
+        <div className="left">
+          
+        </div>
+        <div className="right">
+          <div className="res">
+            <input type="text" name="rpta" id="rpta" />
+          </div>
+        </div>
+      </main>
+    </div>
   )
 }
 
