@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from 'react'
+import { useState } from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenToSquare } from '@fortawesome/free-solid-svg-icons'
@@ -9,13 +9,9 @@ import CheckNo from './check-no.png'
 import CheckSi from './check-si.png'
 
 function App() {
-  const [receiverInfo, setReceiverInfo] = useState("");
   const [qList, setQList] = useState<string[]>([]);
   const [checked,setChecked] = useState<boolean[]>([]);
 
-  const inChanged = (e: ChangeEvent<HTMLTextAreaElement>) => {
-    setReceiverInfo(e.target.value);
-  }
 
   const addToList = () => {
     var htmlinp = (document.getElementById("adder") as HTMLInputElement);
@@ -44,7 +40,6 @@ function App() {
   }
 
   const process = () => {
-    var txt = qList;
     var a = qList.filter((q,idx) => {
       if(checked[idx] == true){
         return true
