@@ -38,18 +38,73 @@
 }
 
 .left{
-  background-color: red;
+  background-color: gray;
   width: 50%;
   height: auto;
   display: flex;
   flex-direction: column;
   gap: 1em;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1em 7em;
 }
+
+.receiver,.res {
+  width: 100%;
+}
+
+#in,#rpta {
+  width: 90%;
+  max-width: 100%;
+  min-width: 200px;
+  height: 90%;
+  max-height: 90%;
+  min-height: 400px;
+  padding: 1em;
+}
+
+.GoBTN{
+  cursor: pointer;
+  width: 10em;
+  height: 5em;
+  background-color: darkolivegreen;
+  color: whitesmoke;
+  font-weight: 700;
+  border: 0;
+  border-radius: 1em;
+  transition: all ease 200ms;
+}
+
+.GoBTN:hover {
+  filter: brightness(0.8);
+  transform: scale(1.1);
+  transition: all ease 200ms;
+}
+
+
 .right{
-  background-color: blue;
+  background-color: whitesmoke;
   width: 50%;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 1em;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1em 7em;
+}
+
+@media screen and (max-width: 992px) {
+  .princ {
+    flex-direction: column;
+    width: 100%;
+  }
+  .left{
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
 }
