@@ -38,7 +38,7 @@
 }
 
 .left{
-  background-color: gray;
+  background-color: rgb(234, 234, 234);
   width: 50%;
   height: auto;
   display: flex;
@@ -50,11 +50,114 @@
   padding: 1em 7em;
 }
 
+.inputer {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+}
+
+#adder {
+  width: 90%;
+  min-width: 200px;
+  height: 3em;
+  max-height: 3em;
+  border: 0;
+  padding-left: 10px;
+}
+
+.addBTN {
+  width: 5em;
+  height: 3em;
+  background-color: darkolivegreen;
+  border: 0;
+  border-radius: 0 10px 10px 0;
+  transition: all ease 100ms;
+}
+
+.addBTN:hover {
+  cursor: pointer;
+  filter: brightness(0.8);
+  transform: scaleX(1.1);
+  transition: all ease 100ms;
+}
+
+.colection {
+  margin-top: 1em;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  
+}
+
+.card {
+  width: 90%;
+  min-height: 5em;
+  height: auto;
+  background-color: whitesmoke;
+  border-width: 1px 0px;
+  border-color: black;
+  border-style: solid;
+  
+  color: black;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 1em 0;
+}
+
+.card-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+}
+
+.card-btn {
+  width: 3em;
+  height: 3em;
+}
+
+.editBTN {
+  background-color: darkolivegreen;
+}
+
+.deleteBTN {
+  background-color: brown;
+}
+
+.clicker {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.card-text {
+  margin-right: 2em;
+}
+
+#checker {
+  width: 20px;
+}
+
+.imgCheck {
+  width: 3em;
+  height: auto;
+}
+
 .receiver,.res {
   width: 100%;
 }
 
-#in,#rpta {
+#rpta {
   width: 90%;
   max-width: 100%;
   min-width: 200px;
