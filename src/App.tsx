@@ -40,7 +40,7 @@ function App() {
   }
 
   const process = () => {
-    var a = qList.filter((q,idx) => {
+    var a = qList.filter((_q,idx) => {
       if(checked[idx] == true){
         return true
       }else{
